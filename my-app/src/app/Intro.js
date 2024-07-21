@@ -8,7 +8,7 @@ function Intro() {
             <h1>& Design Work of</h1>
             <h1>Kunal!!</h1>
         </div>
-        <hr className='absolute left-[5%] top-[85%] w-[90%] h-[3px] bg-black'/>
+        <hr className='absolute left-[4%] top-[85%] w-[92%] h-[3px] bg-black'/>
     </React.Fragment>
   )
 }
