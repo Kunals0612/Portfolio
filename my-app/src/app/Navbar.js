@@ -1,13 +1,17 @@
 import React from 'react'
-
+// import '../styles/Navbar.css'
 function Navbar() {
   return (
     <React.Fragment>
-        <div className='flex flex-row font-normal text-base'>
-            <p className='absolute top-[1.5%] left-[2%]'>KUNAL S</p>
-            <p className='absolute top-[1.5%] right-[2%]'>CONTACT ME</p>
-        </div>
-        <hr className='absolute top-[5%] w-[100%] h-[3px] bg-black'/>
+        <nav className=' navbar flex font-normal text-[18px] justify-between p-[1vw]'>
+          <div className='left-nav'>
+            <p>KUNAL S</p>
+          </div>
+          <div className='right-nav'>
+            <p>CONTACT ME</p>
+          </div>
+        </nav>
+        <hr className='w-[100%] h-[1.5px] bg-black'/>
     </React.Fragment>
   )
 }
