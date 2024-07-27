@@ -76,4 +76,55 @@ body {
   .vl{
     display: none;
   }
+  .aboutme h5{
+    font-size: 4vw;
+  }
+  .aboutmemain{
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 18vw;
+  }
+  .aboutmeleft img{
+    width: 92vw;
+    height: 100vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+  }
+  .aboutmeright{
+    margin: 0;
+    font-size: 4.3vw;
+    font-weight: 600;
+    gap: 4vw;
+  }
+  .contactme h5{
+    font-size: 4vw;
+  }
+  .email{
+    font-size: 6.6vw;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+  }
+  /* .hover-line{
+    display:none;
+  } */
+}
+.hover-line {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.hover-line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  bottom: 60px;
+  left: 0;
+  background-color: #999966;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hover-line:hover::after {
+  visibility: visible;
+  width: 100%;
 }
