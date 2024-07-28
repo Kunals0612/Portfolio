@@ -38,6 +38,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <hr className='introhr w-[100%] h-[3px] bg-black '/>
         </React.Fragment>
     );
 }

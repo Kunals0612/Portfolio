@@ -3,8 +3,8 @@ import React from 'react';
 function Projects(props) {
   return (
     <React.Fragment>
-      <div className='project ml-[4vw] mt-[2vw] flex flex-row flex-wrap justify-between '>
-        <div className='projectintro mt-[1vw] w-[30vw]'>
+      <div className='project ml-[4vw] mt-[1vw] flex flex-row flex-wrap justify-between '>
+        <div className='projectintro mt-[1vw] w-[35vw]'>
           <h5 className='text-[1vw] font-semibold mb-[10vw]'>● PROJECT {props.num}</h5>
           <h1 className='text-[3vw] font-bold mb-[1vw]'>{props.name}</h1>
           <p className='text-[1.3vw]'>{props.desc}</p>

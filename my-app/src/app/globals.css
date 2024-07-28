@@ -13,17 +13,17 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 240, 240, 240;
     --background-end-rgb: 240, 240, 240;
+    transition: background-color 0.8s ease; 
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
+  background: linear(
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    transition: background-color 0.8s ease; 
 }
 
 @layer utilities {
@@ -32,81 +32,95 @@ body {
   }
 }
 
-@media (max-width:394px) {
-  .navbar{
-      font-size: 10px;
-      font-weight: 700;
-      padding: 3vw;
+@media (max-width: 394px) {
+  .navbar {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3vw;
   }
-  .intro{
+  .intro {
     font-size: 10vw;
     margin-bottom: 20vw;
   }
-  
-  .project h5{
-     font-size: 4vw;
-     margin-top: 4vw;
+  .project h5 {
+    font-size: 4vw;
+    margin-top: 4vw;
   }
-  .projectintro h1{
-    font-size: 8vw; 
+  .projectintro h1 {
+    font-size: 8vw;
   }
-  .projectintro{
+  .projectintro {
     width: 100vw;
   }
-  .projectintro p{
-     font-size: 4.5vw;
-     padding-top: 6vw;
-     padding-bottom: 6vw;
+  .projectintro p {
+    font-size: 4.5vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
   }
-  .projectimg img{
+  .projectimg img {
     width: 90vw;
     height: 80vw;
   }
-  .projectimg img:hover{
+  .projectimg img:hover {
     border-radius: 30px;
   }
-  .btn{
+  .btn {
     font-size: 15px;
     padding: 3vw;
     width: 30vw;
   }
-  .btndiv{
+  .btndiv {
     padding-bottom: 10vw;
   }
-  .vl{
+  .vl {
     display: none;
   }
-  .aboutme h5{
+  .aboutme h5 {
     font-size: 4vw;
   }
-  .aboutmemain{
+  .aboutmemain {
     flex-wrap: wrap;
     margin: 0;
     padding-bottom: 18vw;
   }
-  .aboutmeleft img{
+  .aboutmeleft img {
     width: 92vw;
     height: 100vw;
     margin-top: 8vw;
     margin-bottom: 8vw;
   }
-  .aboutmeright{
+  .aboutmeright {
     margin: 0;
     font-size: 4.3vw;
     font-weight: 600;
     gap: 4vw;
   }
-  .contactme h5{
+  .contactme h5 {
     font-size: 4vw;
   }
-  .email{
+  .email {
     font-size: 6.6vw;
     margin-top: 12vw;
     margin-bottom: 12vw;
   }
-  /* .hover-line{
-    display:none;
-  } */
+  .hover-line {
+    display: none;
+  }
+  .social {
+    flex-direction: column;
+  }
+  .socials {
+    border-left: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+  }
+  .socials p {
+    font-size: 7vw;
+    padding: 8vw 0vw 8vw 4vw;
+  }
+}
+.social {
+  cursor: pointer;
 }
 .hover-line {
   position: relative;
